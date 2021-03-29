@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H06 Tech</title>
+  <link rel="stylesheet" href="stylesheet2.css">
+  <link rel="stylesheet" href="stylesheet3.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css" media="all">
+    ul {
+      list-style-image: url(https://fontawesome.com/icons/angle-right?style=solid);
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/29aeda2250.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <h1>
+          <a href="#">H06 Tech</a>
+        </h1>
+      </div>
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="#">Profil</a>
+        <a href="">Services</a>
+        <a href="#">Public Information</a>
+        <a href="#">Contact Us</a>
+        <a href="#"><span class="fa fa-search search-icon"></span></a>
+        <a href="#" class="Login">Login</a>
+      </div>
+    </div>
+  </header>
+  <div class="slideshow">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/image_1.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/image_2.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/image_3.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+  </script>
+
+  <div class="lesson-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Join Us!</h2>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="box b1">
+            <h3 class="text-contents">REGISTER ONLINE</h3>
+            <p class="text-contents">Online service registration in 1 (one) booking and registration portal. </p>
+            <a href="#" class="btn register"><span class="fa fa-check-circle"></span>Register</a>
+          </div>
+        </div>
+        <div class="lesson">
+          <div class="box b2">
+            <h3 class="text-contents">INFORMATION SERVICE</h3>
+            <p class="text-contents">Information, questions, and assistance related to services. </p>
+            <a href="#" class="btn visit"><span class="fa fa-check-circle"></span>Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="lesson">
+        <div class="box b3">
+          <h3 class="text-contents">PUBLIC INFORMATION</h3>
+          <p class="text-contents">Transparency in public information disclosure about services.</p>
+          <a href="#" class="btn go"><span class="fa fa-check-circle"></span>Go</a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container-main">
+      <div class="heading">
+        <h2 style="text-align: center;">Our Services</h2>
+      </div>
+      <div class="lessons-main">
+        <div class="lesson-main-icon">
+          <img src="img/segi8-1.png">
+          <i class="fas fa-vial fa-4x"></i>
+          <p>Testing</p>
+        </div>
+      </div>
+      <div class=" lessons-main">
+        <div class="lesson-main-icon">
+          <img src="img/segi8-2.png">
+          <i class="fas fa-laptop-code fa-4x"></i>
+          <p>Callibration</p>
+        </div>
+      </div>
+      <div class="lessons-main">
+        <div class="lesson-main-icon">
+          <img src="img/segi8-3.png">
+          <i class="fas fa-search fa-4x"></i>
+          <p>Research</p>
+        </div>
+      </div>
+      <div class="lessons-main">
+        <div class="lesson-main-icon">
+          <img src="img/segi8-4.png">
+          <i class="fas fa-chalkboard-teacher fa-4x"></i>
+          <p>Training</p>
+        </div>
+      </div>
+      <div class="lessons-main">
+        <div class="lesson-main-icon">
+          <img src="img/segi8-5.png">
+          <i class="fas fa-bookmark fa-4x"></i>
+          <p>Certification</p>
+        </div>
+      </div>
+      <div class="lessons-main">
+        <div class="lesson-main-icon">
+          <img src="img/segi8-6.png">
+          <i class="fas fa-comments fa-4x"></i>
+          <p>Consultation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-wrapper2">
+    <div class="container">
+      <div class="heading">
+        <h2>News & Event</h2>
+      </div>
+      <div class="lessons">
+        <div class="lesson2">
+          <div class="box2 news1">
+            <h3 class="text-contents">Launching New Product</h3>
+            <p class="text-contents"><span class="fa fa-check-circle"><span> 26 Maret 2021</p>
+            <p class="text-contents">Please welcome our new product. Please welcome our new product. Please welcome our
+              new product. Please welcome our new product. Please welcome our new product.Please welcome our new
+              product. </p>
+          </div>
+        </div>
+        <div class="lesson2">
+          <div class="box2 news2">
+            <h3 class="text-contents">Free Training for Our Loyal Customer</h3>
+            <p class="text-contents"><span class="fa fa-check-circle"><span> 26 Maret 2021</p>
+            <p class="text-contents">Free Training for Our Loyal Customer. Free Training for Our Loyal Customer. Free
+              Training for Our Loyal Customer. Free Training for Our Loyal Customer. </p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Ramdhan Start-->
+  <div>
+    <div>
+      <div class="testimoni">
+        <h2>Testimoni User</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/customer-icon1.png">
+            <div class="content">
+              <h2>Anton Gunawan</h2>
+              <p>Pelatihan Disini Sangat Bermanfaat </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/customer-icon1.png">
+            <div class="content">
+              <h2>Farid Danang</h2>
+              <p>Hasil Uji Sangat Cepat Dan Akurat </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/customer-icon1.png">
+            <div class="content">
+              <h2>Ilham Setiawan</h2>
+              <p>Alatnya Sangat Lengkap </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/customer-icon1.png">
+            <div class="content">
+              <h2>Ramdhani Sanusi</h2>
+              <p>Hasil Tes Bisa Langsung Jadi </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/customer-icon1.png">
+            <div class="content">
+              <h2>Rika</h2>
+              <p>Saya Harus Rekomendasikan Pelatihan Disini </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ilham Start -->
+    <div class="footer">
+      <h1>Our Staff</h1>
+      <div class="container">
+        <div class="support">
+          <div class="support-contact">
+            <div class="contact">
+              <img
+                src="https://cdn.discordapp.com/avatars/761971040606748692/d99936321e9f6aa557cecae3dc7490c7.png?size=128" />
+              <p>ANTON GUNAWAN</p>
+              <p><i>(Traineer)</i></p>
+            </div>
+          </div>
+  
+          <div class="support-contact">
+            <div class="contact">
+              <img
+                src="https://cdn.discordapp.com/avatars/821399832551620620/8d3ea262eb81561adfaf0bbfa3dd7669.png?size=128" />
+              <p>FARID DANANG</p>
+              <p><i>(Traineer)</i></p>
+            </div>
+          </div>
+  
+          <div class="support-contact">
+            <div class="contact">
+              <img
+                src="https://cdn.discordapp.com/avatars/820956857220857876/2cfe38f80291d303c393069d118fb400.png?size=128" />
+              <p>MIDORIKA</p>
+              <p><i>(Traineer)</i></p>
+            </div>
+          </div>
+  
+          <div class="support-contact">
+            <div class="contact">
+              <img
+                src="https://cdn.discordapp.com/avatars/706521894043516971/c4903e662cd7ca5cf01774b540cdbe29.png?size=128" />
+              <p>RAMDHANI SANUSI</p>
+              <p><i>(Traineer)</i></p>
+            </div>
+          </div>
+  
+          <div class="support-contact">
+            <div class="contact">
+              <img
+                src="https://cdn.discordapp.com/avatars/723196206808825906/4cfb1b686b4da704a15033300c542d99.png?size=128" />
+              <p>ILHAM SETIAWAN</p>
+              <p><i>(Traineer)</i></p>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-footer">
+              <div class="aboutus">
+                <h2>About Us</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+  
+            <div class="section-footer">
+              <div class="ourservice">
+                <div class="service">
+                  <h2>Our Service</h2>
+                </div>
+                <div class="footer-list">
+                  <ul>
+                    <li>testing</li>
+                    <li>calibration</li>
+                    <li>research</li>
+                    <li>training</li>
+                    <li>certification</li>
+                    <li>consultation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="section-footer">
+              <div class="place">
+                <h2>Find Us</h2>
+                <h3>Jl karangkadempel <br />KM9 - Ruko KIW kav.90. Ngalengka Semarang 50186 <br /> </h3>
+  
+                <div class="lokasi">
+                  <!--logopinlokasi--><a href=""> <br />lihat google map</a>
+                </div>
+  
+                <img src="" alt="" />
+                <!--logo telp-->
+                <p>0283-533152</p>
+                <img src="" alt="" />
+                <!--logo telp-->
+                <p>+62896 5428 2215</p>
+              </div>
+            </div>
+  
+            <div class="section-footer">
+              <div class="follow">
+                <h2>Follow Us</h2>
+              </div>
+              <div class="follow-logo">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo">
+      <h1>H06 Tech.</h1>
+      <p>Your satisfaction is our priority.</p>
+    </div>
+  </footer>
+</body>
+  
+</html>
